@@ -1,7 +1,7 @@
 import streamlit as st
 nav=st.sidebar.radio("Portfolio",['Home','About','Education','Work','Contact'])
 if nav == 'Home':
-    st.markdown("# Bikram Sadhukhan111")
+    st.markdown("# Bikram Sadhukhan")
     st.subheader("BTech-MTech Cybersecurity")
     st.write("Java|SQL|C++|C|Digital Forensic Tools|CTF Player")
     st.divider()

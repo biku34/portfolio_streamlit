@@ -1,4 +1,14 @@
 import streamlit as st
+from PIL import Image
+im = Image.open('profile.jpeg')
+st.set_page_config(page_title="Bikram Sadhukhan",page_icon=im)
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
 nav=st.sidebar.radio("Portfolio",['Home','About','Education','Work','Contact'])
 if nav == 'Home':
     st.markdown("# Bikram Sadhukhan")
@@ -22,6 +32,11 @@ if nav == 'Contact':
         st.image("gmail.png")
     with mai:
         st.write("bikramsadhukhan505@gmail.com")
+    icg,git = st.columns([2,40])
+    with icg:
+        st.image("github.png")
+    with git:
+        st.write("https://github.com/biku34")
 if nav == 'Education' :
     st.markdown("# Education")
     st.divider()

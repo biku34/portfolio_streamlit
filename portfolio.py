@@ -11,9 +11,18 @@ hide_default_format = """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 nav=st.sidebar.radio("Portfolio",['Home','About','Education','Work','Contact'])
 if nav == 'Home':
-    st.markdown("# Bikram Sadhukhan")
-    st.subheader("BTech-MTech Cybersecurity")
-    st.write("Java|SQL|C++|C|Digital Forensic Tools|CTF Player")
+    bio,img=st.columns([5,2])
+    with bio:
+        st.markdown("# Bikram Sadhukhan")
+        st.subheader("BTech-MTech Cybersecurity")
+        st.write("Java|SQL|C++|C|Digital Forensic Tools|CTF Player")
+        icm,mai = st.columns([2,40])
+        with icm:
+            st.image("gmail.png")
+        with mai:
+            st.write("bikramsadhukhan505@gmail.com")
+    with img:
+        st.image("profile.jpeg" , width=200)
     st.divider()
 if nav == 'About':
     st.header("About Me : ")

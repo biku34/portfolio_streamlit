@@ -16,11 +16,7 @@ if nav == 'Home':
         st.markdown("# Bikram Sadhukhan")
         st.subheader("BTech-MTech Cybersecurity")
         st.write("Java|SQL|C++|C|Digital Forensic Tools|CTF Player")
-        icm,mai = st.columns([2,40])
-        with icm:
-            st.image("gmail.png")
-        with mai:
-            st.write("bikramsadhukhan505@gmail.com")
+        st.write("bikramsadhukhan505@gmail.com")
     with img:
         st.image("profile.jpeg" , width=200)
     st.divider()

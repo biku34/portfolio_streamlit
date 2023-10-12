@@ -17,7 +17,7 @@ if nav == 'Home':
         st.subheader("BTech-MTech Cybersecurity")
         st.write("Java|SQL|C++|C|Digital Forensic Tools|CTF Player")
         st.write("bikramsadhukhan505@gmail.com")
-       <script src="https://tryhackme.com/badge/1747277"></script>
+        <script src="https://tryhackme.com/badge/1747277"></script>
     with img:
         st.image("profile.jpeg" , width=200)
     st.divider()
